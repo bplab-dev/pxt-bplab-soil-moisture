@@ -46,9 +46,9 @@ namespace soilMoisture {
 
     /**
      * Get soil moisture sensor value2
-     * @param pin Analog pin connected to sensor
+     * @param pin pin connected to sensor
      */
-    //% blockId="readSoilMoisture" block="soil moisture at pin %pin"
+    //% blockId="readSoilMoisture2" block="soil moisture at pin %pin"
     //% tooltip="Reads the soil moisture level from sensor connected to the specified analog pin"
     //% pin.fieldEditor="gridpicker"
     //% pin.fieldOptions.columns=4
