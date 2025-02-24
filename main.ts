@@ -50,7 +50,7 @@ namespace soilMoisture {
             case ValueType.PERCENTAGE:
                 // Convert to percentage (inverted as more moisture = lower resistance)
                 // Typically: Dry soil > 800, Water ~ 300
-                return Math.map(moisture, 800, 300, 0, 100)
+                return Math.map(moisture, 1023, 240, 0, 100)
             default:
                 return 0
         }
