@@ -43,4 +43,17 @@ namespace soilMoisture {
                 return 0
         }
     }
+
+    /**
+     * Get soil moisture sensor value2
+     * @param pin Analog pin connected to sensor
+     */
+    //% blockId="readSoilMoisture" block="soil moisture at pin %pin"
+    //% tooltip="Reads the soil moisture level from sensor connected to the specified analog pin"
+    //% pin.fieldEditor="gridpicker"
+    //% pin.fieldOptions.columns=4
+    //% pin.fieldOptions.tooltips="false"
+    export function soilTest(pin: DigitalPin): number {
+        return 0;
+    }
 }
