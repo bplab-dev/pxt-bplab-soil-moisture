@@ -7,9 +7,9 @@ namespace soilMoisture {
      * Soil moisture value type
      */
     export enum ValueType {
-        //% block="moisture (0~1023)" enumval=0
+        //% block="0 ~ 1023" enumval=0
         RAW,
-        //% block="moisture (0~100%)" enumval=1
+        //% block="0 ~ 100%" enumval=1
         PERCENTAGE
     }
 
@@ -24,7 +24,11 @@ namespace soilMoisture {
         //% block="P2"
         P2 = AnalogPin.P2,
         //% block="P3"
-        P3 = AnalogPin.P3
+        P3 = AnalogPin.P3,
+        //% block="P4"
+        P4 = AnalogPin.P4,
+        //% block="P10"
+        P10 = AnalogPin.P10
     }
     /**
      * Get soil moisture sensor value
@@ -50,7 +54,7 @@ namespace soilMoisture {
             case ValueType.PERCENTAGE:
                 // Convert to percentage (inverted as more moisture = lower resistance)
                 // Typically: Dry soil > 800, Water ~ 300
-                return Math.map(moisture, 1023, 240, 0, 100)
+                return Math.map(moisture, 1023, 300, 0, 100)
             default:
                 return 0
         }
