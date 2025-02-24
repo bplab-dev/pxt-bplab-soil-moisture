@@ -3,8 +3,8 @@
   "soilMoisture.SoilMoisturePin.P1|block": "P1",
   "soilMoisture.SoilMoisturePin.P2|block": "P2",
   "soilMoisture.SoilMoisturePin.P3|block": "P3",
-  "soilMoisture.ValueType.PERCENTAGE|block": "moisture (0~100%)",
-  "soilMoisture.ValueType.RAW|block": "moisture (0~1023)",
+  "soilMoisture.ValueType.PERCENTAGE|block": "Percentage Value(0~100%)",
+  "soilMoisture.ValueType.RAW|block": "Analog Value(0~1023)",
   "soilMoisture.soilMoistureValue|block": "soil moisture %valueType| at pin %pin",
   "soilMoisture|block": "Soil Moisture",
   "{id:category}SoilMoisture": "SoilMoisture"

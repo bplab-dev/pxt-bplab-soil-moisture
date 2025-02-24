@@ -7,9 +7,9 @@ namespace soilMoisture {
      * Soil moisture value type
      */
     export enum ValueType {
-        //% block="0 ~ 1023" enumval=0
+        //% block="Analog Value(0~1023)" enumval=0
         RAW,
-        //% block="0 ~ 100%" enumval=1
+        //% block="Percentage Value(0~100%)" enumval=1
         PERCENTAGE
     }
 
