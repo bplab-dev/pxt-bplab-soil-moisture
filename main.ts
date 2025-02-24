@@ -1,6 +1,6 @@
-/**
- * Soil Moisture Sensor with LM393
- */
+	/**
+* Soil Moisture Sensor with LM393
+*/
 //% color=#3eb0e0 icon="\uf043" block="Soil Moisture" weight=1
 namespace soilMoisture {
     /**
@@ -14,6 +14,19 @@ namespace soilMoisture {
     }
 
     /**
+     * Soil moisture pin
+     */
+    export enum SoilMoisturePin {
+        //% block="P0"
+        P0 = AnalogPin.P0,
+        //% block="P1"
+        P1 = AnalogPin.P1,
+        //% block="P2"
+        P2 = AnalogPin.P2,
+        //% block="P3"
+        P3 = AnalogPin.P3
+    }
+    /**
      * Get soil moisture sensor value
      * @param pin Analog pin connected to sensor
      * @param valueType Select raw value or percentage
@@ -24,8 +37,7 @@ namespace soilMoisture {
     //% pin.fieldOptions.columns=4
     //% pin.fieldOptions.tooltips="false"
     //% pin.fieldOptions.decompileLiterals=true
-    //% pin.fieldOptions.values="AnalogPin.P0|AnalogPin.P1|AnalogPin.P2"
-    export function soilMoistureValue(valueType: ValueType, pin: AnalogPin): number {
+    export function soilMoistureValue(valueType: ValueType, pin: SoilMoisturePin): number {
         // Read analog value
         let moisture = pins.analogReadPin(pin)
 
@@ -44,16 +56,4 @@ namespace soilMoisture {
         }
     }
 
-    /**
-     * Get soil moisture sensor value2
-     * @param pin pin connected to sensor
-     */
-    //% blockId="readSoilMoisture2" block="soil moisture at pin %pin"
-    //% tooltip="Reads the soil moisture level from sensor connected to the specified analog pin"
-    //% pin.fieldEditor="gridpicker"
-    //% pin.fieldOptions.columns=4
-    //% pin.fieldOptions.tooltips="false"
-    export function soilTest(pin: DigitalPin): number {
-        return 0;
-    }
 }
