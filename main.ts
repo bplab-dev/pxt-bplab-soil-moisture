@@ -22,8 +22,8 @@ namespace soilMoisture {
     //% tooltip="Reads the soil moisture level from sensor connected to the specified analog pin"
     //% pin.fieldEditor="gridpicker"
     //% pin.fieldOptions.columns=4
-    //% pin.fieldOptions.width=220
     //% pin.fieldOptions.tooltips="false"
+    //% pin.fieldOptions.values="AnalogPin.P0|AnalogPin.P1|AnalogPin.P2"
     export function soilMoistureValue(valueType: ValueType, pin: AnalogPin): number {
         // Read analog value
         let moisture = pins.analogReadPin(pin)
