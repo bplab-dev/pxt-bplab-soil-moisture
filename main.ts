@@ -35,7 +35,7 @@ namespace soilMoisture {
      * @param pin Analog pin connected to sensor
      * @param valueType Select raw value or percentage
      */
-    //% blockId="readSoilMoisture" block="soil moisture %valueType| at pin %pin"
+    //% blockId="readSoilMoisture" block="soil moisture %valueType at pin %pin"
     //% tooltip="Reads the soil moisture level from sensor connected to the specified analog pin"
     //% pin.fieldEditor="gridpicker"
     //% pin.fieldOptions.columns=4
