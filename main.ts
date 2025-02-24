@@ -3,8 +3,6 @@
  */
 //% color=#3eb0e0 icon="\uf043" block="Soil Moisture" weight=1
 namespace soilMoisture {
-    export type MoisturePins = AnalogPin.P0 | AnalogPin.P1 | AnalogPin.P2;
-
     /**
      * Soil moisture value type
      */
@@ -26,8 +24,7 @@ namespace soilMoisture {
     //% pin.fieldOptions.columns=2
     //% pin.fieldOptions.width=220
     //% pin.fieldOptions.tooltips="false"
-    //% pin.fieldOptions.shared=true
-    export function soilMoistureValue(valueType: ValueType, pin: MoisturePins): number {
+    export function soilMoistureValue(valueType: ValueType, pin: AnalogPin): number {
         // Read analog value
         let moisture = pins.analogReadPin(pin)
 
