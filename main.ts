@@ -23,6 +23,7 @@ namespace soilMoisture {
     //% pin.fieldEditor="gridpicker"
     //% pin.fieldOptions.columns=4
     //% pin.fieldOptions.tooltips="false"
+    //% pin.fieldOptions.decompileLiterals=true
     //% pin.fieldOptions.values="AnalogPin.P0|AnalogPin.P1|AnalogPin.P2"
     export function soilMoistureValue(valueType: ValueType, pin: AnalogPin): number {
         // Read analog value
