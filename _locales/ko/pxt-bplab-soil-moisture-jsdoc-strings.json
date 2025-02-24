@@ -1,0 +1,8 @@
+{
+  "soilMoisture": "토양습도",
+  "soilMoisture.SoilMoisturePin": "토양습도 핀",
+  "soilMoisture.ValueType": "토양습도 값 유형(값/백분율)",
+  "soilMoisture.soilMoistureValue": "토양습도 센서 값 가져오기",
+  "soilMoisture.soilMoistureValue|param|pin": "센서가 연결된 아날로그 핀",
+  "soilMoisture.soilMoistureValue|param|valueType": "토양습도 값 표시 형식(아날로그/백분율)"
+}

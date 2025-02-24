@@ -1,0 +1,8 @@
+{
+  "soilMoisture": "Soil Moisture Sensor with LM393",
+  "soilMoisture.SoilMoisturePin": "Soil moisture pin",
+  "soilMoisture.ValueType": "Soil moisture value type",
+  "soilMoisture.soilMoistureValue": "Get soil moisture sensor value",
+  "soilMoisture.soilMoistureValue|param|pin": "Analog pin connected to sensor",
+  "soilMoisture.soilMoistureValue|param|valueType": "Select raw value or percentage"
+}
