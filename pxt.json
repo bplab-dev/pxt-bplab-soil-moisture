@@ -9,8 +9,8 @@
         "README.md",
         "main.blocks",
         "main.ts",
-        "_locales/ko/soil-moisture-bplab-jsdoc-strings.json",
-        "_locales/ko/soil-moisture-bplab-strings.json"
+        "_locales/ko/soil-moisture-jsdoc-strings.json",
+        "_locales/ko/soil-moisture-strings.json"
     ],
     "testFiles": [
         "test.ts"
