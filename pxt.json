@@ -1,5 +1,5 @@
 {
-    "name": "pxt-bplab-soil-moisture",
+    "name": "soil-moisture-bplab",
     "version": "0.0.3",
     "description": "",
     "dependencies": {
@@ -8,7 +8,9 @@
     "files": [
         "README.md",
         "main.blocks",
-        "main.ts"
+        "main.ts",
+        "_locales/ko/soil-moisture-bplab-jsdoc-strings.json",
+        "_locales/ko/soil-moisture-bplab-strings.json"
     ],
     "testFiles": [
         "test.ts"
