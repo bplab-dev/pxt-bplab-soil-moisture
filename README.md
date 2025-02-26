@@ -1,24 +1,86 @@
+# Soil Moisture Sensor with LM393 Extension for MakeCode
 
-> 이 페이지를 [https://bplab-dev.github.io/pxt-bplab-soil-moisture/](https://bplab-dev.github.io/pxt-bplab-soil-moisture/)으로 열기
+![Soil Moisture Sensor Image](./icon.png)
 
-## 확장으로 사용
+This extension allows you to easily measure soil moisture levels using an LM393-based soil moisture sensor with the micro:bit.
 
-이 저장소는 MakeCode에서 **확장**으로 추가될 수 있습니다.
+## Use as Extension
 
-* [https://makecode.microbit.org/](https://makecode.microbit.org/) 열기
-* **새로운 프로젝트**에서 클릭
-* 톱니바퀴 모양 메뉴에서 **확장**을 클릭합니다
-* **https://github.com/bplab-dev/pxt-bplab-soil-moisture**으로 검색하고 가져오기
+This repository can be added as an **extension** in MakeCode.
 
-## 이 프로젝트 편집
+- open [https://makecode.microbit.org/](https://makecode.microbit.org/)
+- click on **New Project**
+- click on **Extensions** under the gearwheel menu
+- search for **bplab-dev/pxt-bplab-soil-moisture** and import
 
-MakeCode에서 이 저장소를 편집합니다.
+## 🚀 Features
 
-* [https://makecode.microbit.org/](https://makecode.microbit.org/) 열기
-* **가져오기**를 클릭한 다음 **가져오기 URL**를 클릭합니다
-* **https://github.com/bplab-dev/pxt-bplab-soil-moisture**를 붙여넣고 가져오기를 클릭하세요.
+- Easy reading of soil moisture levels with micro:bit
+- Support for both raw analog values and percentage readings
+- Simple connection through analog pins
+- Automatic value mapping to meaningful percentage readings
+- Can be registered as a MakeCode extension for easy use
+- Support for Korean
 
-#### 메타데이터(검색, 렌더링에 사용)
+## Blocks
 
-* for PXT/microbit
+### 🔍 Summary: What each block does
+
+| **Block ID**                 | **Function**                                   |
+|-----------------------------|-----------------------------------------------|
+| [`soilMoistureValue`](#soil-moisture-value-block) | Read soil moisture level from sensor |
+
+### Soil Moisture Value Block
+
+- 🔹 Description
+  - Reads soil moisture level from the LM393-based sensor
+  - Supports multiple analog pins (P0, P1, P2, P3, P4, P10)
+  - Provides readings in two value types:
+    - Raw analog values (0-1023)
+    - Percentage values (0-100%)
+
+- ✅ Usage example
+
+  ```blocks
+  let rawMoisture = soilMoisture.soilMoistureValue(soilMoisture.SoilMoisturePin.P0, soilMoisture.ValueType.RAW)
+  basic.showNumber(rawMoisture)
+
+  let moisturePercentage = soilMoisture.soilMoistureValue(soilMoisture.SoilMoisturePin.P1, soilMoisture.ValueType.PERCENTAGE)
+  basic.showNumber(moisturePercentage)
+  ```
+
+## 📝 How It Works
+
+The soil moisture sensor uses the LM393 comparator and two probes that measure electrical resistance in the soil. The resistance varies with moisture content:
+
+- Dry soil has high resistance
+- Wet soil has low resistance
+
+The sensor provides an analog output that is inversely proportional to soil moisture:
+
+- Higher values (around 800-1023) indicate dry soil
+- Lower values (around 300-400) indicate wet soil
+
+The extension automatically maps these values to a more intuitive 0-100% scale.
+
+## 📜 License
+
+MIT License
+
+## 💡 About BPLab
+
+BPLab is a specialized company that provides coding education that anyone can easily learn. We provide in-person and online coding education for children, teens, adults, institutions, organizations, small groups, and schools in Korea in various fields such as IoT, artificial intelligence, micro:bit and Arduino.
+
+We are also leading the way in developing and distributing coding education kits that allow learners to build, program, and experience the principles of coding. These kits utilize microcontrollers such as Arduino and micro:bit, as well as various sensors. This micro:bit extension is available for use in courses taught by BPLab.
+
+Visit our websites:
+
+- Korea: [https://bplab.kr](https://bplab.kr)
+- Global: [https://bplab-us.com](https://bplab-us.com)
+- Japan: [https://bplab-jp.com](https://bplab-jp.com)
+
+## 📍 Supported targets
+
+- for PXT/microbit
+
 <script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
