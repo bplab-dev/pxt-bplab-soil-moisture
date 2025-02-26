@@ -7,7 +7,7 @@
   "soilMoisture.SoilMoisturePin.P4|block": "P4",
   "soilMoisture.ValueType.PERCENTAGE|block": "백분율 값(0~100%)",
   "soilMoisture.ValueType.RAW|block": "아날로그 값(0~1023)",
-  "soilMoisture.soilMoistureValue|block": "토양습도 핀 %pin %valueType",
+  "soilMoisture.soilMoistureValue|block": "토양습도 핀 %pin %valueType 측정",
   "soilMoisture|block": "토양습도",
   "{id:category}SoilMoisture": "토양습도"
 }
