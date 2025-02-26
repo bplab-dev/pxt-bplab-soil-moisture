@@ -7,7 +7,7 @@
   "soilMoisture.SoilMoisturePin.P4|block": "P4",
   "soilMoisture.ValueType.PERCENTAGE|block": "Percentage Value(0~100%)",
   "soilMoisture.ValueType.RAW|block": "Analog Value(0~1023)",
-  "soilMoisture.soilMoistureValue|block": "Pin %pin Soil Moisture %valueType",
+  "soilMoisture.soilMoistureValue|block": "Soil moisture pin %pin %valueType",
   "soilMoisture|block": "Soil Moisture",
   "{id:category}SoilMoisture": "SoilMoisture"
 }

@@ -1,16 +1,16 @@
-	/**
-* Soil Moisture Sensor with LM393
-*/
+/**
+ * Soil Moisture Sensor with LM393
+ */
 //% color=#3eb0e0 icon="\uf043" block="Soil Moisture" weight=1
 namespace soilMoisture {
     /**
      * Soil moisture value type
      */
     export enum ValueType {
-        //% block="Analog Value(0~1023)" enumval=0
-        RAW,
-        //% block="Percentage Value(0~100%)" enumval=1
-        PERCENTAGE
+        //% block="Analog Value(0~1023)"
+        RAW = 0,
+        //% block="Percentage Value(0~100%)"
+        PERCENTAGE = 1
     }
 
     /**
@@ -36,11 +36,9 @@ namespace soilMoisture {
      * @param pin Analog pin connected to sensor
      * @param valueType Select raw value or percentage
      */
-    //% blockId="readSoilMoisture" block="soil moisture pin %pin| %valueType"
+    //% blockId="readSoilMoisture" block="Soil moisture pin %pin %valueType"
     //% tooltip="Reads the soil moisture level from sensor connected to the specified analog pin"
     //% pin.fieldEditor="gridpicker"
-    //% pin.fieldOptions.columns=4
-    //% pin.fieldOptions.tooltips="false"
     export function soilMoistureValue(pin: SoilMoisturePin, valueType: ValueType): number {
         // Read analog value
         let moisture = pins.analogReadPin(pin)
