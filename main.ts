@@ -22,13 +22,7 @@ namespace soilMoisture {
         //% block="P1"
         P1 = AnalogPin.P1,
         //% block="P2"
-        P2 = AnalogPin.P2,
-        //% block="P3"
-        P3 = AnalogPin.P3,
-        //% block="P4"
-        P4 = AnalogPin.P4,
-        //% block="P10"
-        P10 = AnalogPin.P10
+        P2 = AnalogPin.P2
     }
 
     /**

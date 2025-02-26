@@ -34,7 +34,7 @@ This repository can be added as an **extension** in MakeCode.
 
 - 🔹 Description
   - Reads soil moisture level from the LM393-based sensor
-  - Supports multiple analog pins (P0, P1, P2, P3, P4, P10)
+  - Supports multiple analog pins (P0, P1, P2)
   - Provides readings in two value types:
     - Raw analog values (0-1023)
     - Percentage values (0-100%)
