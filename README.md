@@ -42,11 +42,11 @@ This repository can be added as an **extension** in MakeCode.
 - ✅ Usage example
 
   ```blocks
-  let rawMoisture = soilMoisture.soilMoistureValue(soilMoisture.SoilMoisturePin.P0, soilMoisture.ValueType.RAW)
-  basic.showNumber(rawMoisture)
+  let raw = soilMoisture.soilMoistureValue(soilMoisture.SoilMoisturePin.P0, soilMoisture.ValueType.RAW)
+  let percentage = soilMoisture.soilMoistureValue(soilMoisture.SoilMoisturePin.P0, soilMoisture.ValueType.PERCENTAGE)
 
-  let moisturePercentage = soilMoisture.soilMoistureValue(soilMoisture.SoilMoisturePin.P1, soilMoisture.ValueType.PERCENTAGE)
-  basic.showNumber(moisturePercentage)
+  basic.showNumber(raw)
+  basic.showNumber(percentage)
   ```
 
 ## 📝 How It Works
