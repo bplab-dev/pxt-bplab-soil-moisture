@@ -1,7 +1,7 @@
 /**
  * Soil Moisture Sensor with LM393
  */
-//% color=#3eb0e0 icon="\uf043" block="Soil Moisture" weight=1
+//% color=#795548 icon="\uf06c" block="Soil Moisture" weight=1
 namespace soilMoisture {
     /**
      * Soil moisture value type
