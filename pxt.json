@@ -1,6 +1,6 @@
 {
     "name": "soil-moisture-bplab",
-    "version": "0.0.12",
+    "version": "0.0.13",
     "description": "This extension is made by BPLab to allow control of the soil moisture module with micro:bit.",
     "dependencies": {
         "core": "*"
